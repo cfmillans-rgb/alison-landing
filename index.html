@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dra. Alison Carú | Armonización Facial Premium</title>
-    <!-- Google Fonts -->
+    <title>Dra. Alison Carú | Estética y Armonización Facial</title>
+    <!-- Google Fonts: Playfair Display and Outfit -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
@@ -17,7 +17,7 @@
       <div class="nav-container">
         <div class="logo">
           <h1>ALISON CARÚ</h1>
-          <span>Odontología & Estética</span>
+          <span>Odontología & Estética Facial</span>
         </div>
         <nav class="nav-links">
           <a href="#tratamientos">Tratamientos</a>
@@ -32,31 +32,36 @@
       <!-- Hero Section -->
       <section class="hero">
         <div class="hero-content">
-          <h2 class="animate-fade-up">Armonización facial con resultados naturales.</h2>
-          <p class="hero-subtitle animate-fade-up delay-1">Realza tu belleza sin perder tu esencia. Tratamientos personalizados por la Dra. Alison Carú.</p>
+          <h2 class="animate-fade-up">Realza tu belleza sin perder tu esencia.</h2>
+          <p class="hero-subtitle animate-fade-up delay-1">Armonización facial con resultados naturales y enfoque médico. Tratamientos personalizados por la Dra. Alison Carú.</p>
           <div class="hero-actions animate-fade-up delay-2">
             <a href="#reserva" class="btn btn-primary">Reservar hora</a>
             <a href="#tratamientos" class="btn btn-secondary">Ver tratamientos</a>
           </div>
         </div>
         <div class="hero-image-wrapper">
-          <div class="hero-image placeholder-img">
-            <!-- Space for video or high quality image -->
-            <img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&q=80" alt="Medicina Estética" />
+          <div class="hero-image">
+            <img src="./imagenes/WhatsApp Image 2026-07-25 at 21.05.51.jpeg" alt="Medicina Estética Dra. Alison" />
+            <!-- Video Placeholder Icon -->
+            <div class="video-placeholder" title="Ver Video">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 5v14l11-7z"/>
+              </svg>
+            </div>
           </div>
         </div>
         <div class="trust-indicators">
           <div class="indicator">
-            <span class="check">✔</span> <span class="counter" data-target="1000">0</span>+ pacientes
+            <span class="check">✦</span> <span class="counter" data-target="1000">0</span>+ pacientes
           </div>
           <div class="indicator">
-            <span class="check">✔</span> Resultados naturales
+            <span class="check">✦</span> Resultados naturales
           </div>
           <div class="indicator">
-            <span class="check">✔</span> Atención personalizada
+            <span class="check">✦</span> Atención personalizada
           </div>
           <div class="indicator">
-            <span class="check">✔</span> Puente Alto • Providencia • Chicureo
+            <span class="check">✦</span> Puente Alto • Providencia • Chicureo
           </div>
         </div>
       </section>
@@ -64,44 +69,13 @@
       <!-- Quiz Section -->
       <section class="quiz-section">
         <div class="container text-center">
-          <h3 class="section-title">¿Qué deseas mejorar?</h3>
+          <h3 class="section-title">¿Qué deseas lograr hoy?</h3>
           <div class="quiz-options">
-            <button class="quiz-btn" data-target="#tratamiento-labios">Quiero labios más definidos.</button>
-            <button class="quiz-btn" data-target="#tratamiento-nariz">Quiero perfilar mi nariz.</button>
-            <button class="quiz-btn" data-target="#tratamiento-arrugas">Quiero prevenir arrugas.</button>
-            <button class="quiz-btn" data-target="#tratamiento-perfil">Quiero mejorar mi perfil.</button>
-            <button class="quiz-btn" data-target="#tratamientos">No estoy segura.</button>
-          </div>
-        </div>
-      </section>
-
-      <!-- Problem/Interactive Section -->
-      <section class="problem-section container" id="problemas">
-        <h3 class="section-title text-center">¿Buscas mejorar algún aspecto de tu rostro?</h3>
-        <div class="problem-grid">
-          <div class="problem-item" style="background-image: url('https://images.unsplash.com/photo-1611558709798-e009c8fd7706?auto=format&fit=crop&q=80')">
-            <div class="problem-overlay">
-              <h4>Labios</h4>
-              <a href="#tratamiento-labios" class="btn btn-outline-white">Ver tratamiento</a>
-            </div>
-          </div>
-          <div class="problem-item" style="background-image: url('https://images.unsplash.com/photo-1512496015851-a1fbcf69f59f?auto=format&fit=crop&q=80')">
-            <div class="problem-overlay">
-              <h4>Nariz</h4>
-              <a href="#tratamiento-nariz" class="btn btn-outline-white">Ver tratamiento</a>
-            </div>
-          </div>
-          <div class="problem-item" style="background-image: url('https://images.unsplash.com/photo-1522337660859-02fbefca4702?auto=format&fit=crop&q=80')">
-            <div class="problem-overlay">
-              <h4>Perfil Facial</h4>
-              <a href="#tratamiento-perfil" class="btn btn-outline-white">Ver tratamiento</a>
-            </div>
-          </div>
-          <div class="problem-item" style="background-image: url('https://images.unsplash.com/photo-1549439602-43ebca2327af?auto=format&fit=crop&q=80')">
-            <div class="problem-overlay">
-              <h4>Arrugas</h4>
-              <a href="#tratamiento-arrugas" class="btn btn-outline-white">Ver tratamiento</a>
-            </div>
+            <button class="quiz-btn" data-target="#tratamiento-labios">Quiero labios más definidos e hidratados.</button>
+            <button class="quiz-btn" data-target="#tratamiento-nariz">Quiero perfilar mi nariz sin cirugía.</button>
+            <button class="quiz-btn" data-target="#tratamiento-arrugas">Quiero prevenir y suavizar arrugas.</button>
+            <button class="quiz-btn" data-target="#tratamiento-perfil">Quiero mejorar el contorno de mi rostro.</button>
+            <button class="quiz-btn" data-target="#tratamientos">Quiero una evaluación para saber qué me conviene.</button>
           </div>
         </div>
       </section>
@@ -109,29 +83,48 @@
       <!-- Results (Before/After) Section -->
       <section class="results-section" id="resultados">
         <div class="container">
-          <h3 class="section-title text-center">Resultados Reales</h3>
-          <p class="text-center section-subtitle">Nada vende más que esto. El arte de la sutileza.</p>
+          <h3 class="section-title text-center">El arte de la sutileza</h3>
+          <p class="text-center section-subtitle">Resultados reales. Respetando siempre la anatomía de tu rostro.</p>
           <div class="pinterest-grid">
             <div class="grid-item card-float">
               <div class="ba-image">
-                <span class="ba-label">ANTES | DESPUÉS</span>
-                <img src="https://images.unsplash.com/photo-1596704017254-9b121068fb31?auto=format&fit=crop&q=80" alt="Labios">
+                <span class="ba-label">Antes | Después</span>
+                <img src="./imagenes/WhatsApp Image 2026-07-25 at 21.05.49.jpeg" alt="Labios">
               </div>
-              <h4 class="text-center mt-2">Labios</h4>
+              <h4 class="text-center mt-2">Armonización de Labios</h4>
             </div>
             <div class="grid-item card-float delay-1">
               <div class="ba-image">
-                <span class="ba-label">ANTES | DESPUÉS</span>
-                <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&q=80" alt="Rinomodelación">
+                <span class="ba-label">Antes | Después</span>
+                <img src="./imagenes/WhatsApp Image 2026-07-25 at 21.05.50 (2).jpeg" alt="Rinomodelación">
               </div>
               <h4 class="text-center mt-2">Rinomodelación</h4>
             </div>
             <div class="grid-item card-float delay-2">
               <div class="ba-image">
-                <span class="ba-label">ANTES | DESPUÉS</span>
-                <img src="https://images.unsplash.com/photo-1509967419530-da38b4704bc6?auto=format&fit=crop&q=80" alt="Mentón">
+                <span class="ba-label">Antes | Después</span>
+                <img src="./imagenes/WhatsApp Image 2026-07-25 at 21.05.51 (2).jpeg" alt="Perfil Facial">
               </div>
-              <h4 class="text-center mt-2">Mentón</h4>
+              <h4 class="text-center mt-2">Perfil Facial</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Problem/Interactive Section -->
+      <section class="problem-section container" id="problemas">
+        <h3 class="section-title text-center">Descubre tu mejor versión</h3>
+        <div class="problem-grid">
+          <div class="problem-item" style="background-image: url('./imagenes/WhatsApp Image 2026-07-25 at 21.05.52.jpeg')">
+            <div class="problem-overlay">
+              <h4>Labios</h4>
+              <a href="#tratamiento-labios" class="btn btn-outline-white">Ver tratamiento</a>
+            </div>
+          </div>
+          <div class="problem-item" style="background-image: url('./imagenes/WhatsApp Image 2026-07-25 at 21.05.53 (1).jpeg')">
+            <div class="problem-overlay">
+              <h4>Perfil Nasal</h4>
+              <a href="#tratamiento-nariz" class="btn btn-outline-white">Ver tratamiento</a>
             </div>
           </div>
         </div>
@@ -145,61 +138,61 @@
             
             <div class="card" id="tratamiento-labios">
               <div class="card-image">
-                <img src="https://images.unsplash.com/photo-1588514930219-c07a3c3e74ff?auto=format&fit=crop&q=80" alt="Ácido Hialurónico">
+                <img src="./imagenes/WhatsApp Image 2026-07-25 at 21.05.50 (1).jpeg" alt="Ácido Hialurónico">
               </div>
               <div class="card-content">
-                <h4>💋 Ácido hialurónico</h4>
-                <p>No buscamos exagerar el volumen. Buscamos definición, hidratación y armonía facial.</p>
+                <h4>Ácido Hialurónico</h4>
+                <p>No buscamos exagerar el volumen. Buscamos definición, hidratación profunda y armonía facial.</p>
                 <ul class="treatment-details">
                   <li><strong>Duración:</strong> 9 a 12 meses</li>
                   <li><strong>Recuperación:</strong> Inmediata</li>
                 </ul>
-                <a href="#reserva" class="btn btn-outline full-width mt-2">Reservar</a>
+                <a href="#reserva" class="btn btn-outline full-width mt-2">Reservar evaluación</a>
               </div>
             </div>
 
             <div class="card" id="tratamiento-nariz">
               <div class="card-image">
-                <img src="https://images.unsplash.com/photo-1519415943484-9fa1873496d4?auto=format&fit=crop&q=80" alt="Rinomodelación">
+                <img src="./imagenes/WhatsApp Image 2026-07-25 at 21.05.52 (2).jpeg" alt="Rinomodelación">
               </div>
               <div class="card-content">
-                <h4>✨ Rinomodelación</h4>
-                <p>Mejora el perfil nasal sin cirugía de forma rápida y segura.</p>
+                <h4>Rinomodelación</h4>
+                <p>Mejora el perfil nasal sin cirugía, de forma rápida, segura y con resultados estéticos inmediatos.</p>
                 <ul class="treatment-details">
                   <li><strong>Duración:</strong> 12 a 18 meses</li>
                   <li><strong>Recuperación:</strong> Inmediata</li>
                 </ul>
-                <a href="#reserva" class="btn btn-outline full-width mt-2">Reservar</a>
+                <a href="#reserva" class="btn btn-outline full-width mt-2">Reservar evaluación</a>
               </div>
             </div>
 
             <div class="card" id="tratamiento-perfil">
               <div class="card-image">
-                <img src="https://images.unsplash.com/photo-1554050857-c84a8abdb5e5?auto=format&fit=crop&q=80" alt="Contorno Mandibular">
+                <img src="./imagenes/WhatsApp Image 2026-07-25 at 21.05.52 (1).jpeg" alt="Contorno Mandibular">
               </div>
               <div class="card-content">
-                <h4>😊 Contorno mandibular</h4>
-                <p>Mayor definición y equilibrio facial para un rostro más estilizado.</p>
+                <h4>Contorno Mandibular</h4>
+                <p>Mayor definición y equilibrio facial para un rostro más estilizado y una línea de la mandíbula marcada.</p>
                 <ul class="treatment-details">
                   <li><strong>Duración:</strong> 12 a 18 meses</li>
                   <li><strong>Recuperación:</strong> Inmediata</li>
                 </ul>
-                <a href="#reserva" class="btn btn-outline full-width mt-2">Reservar</a>
+                <a href="#reserva" class="btn btn-outline full-width mt-2">Reservar evaluación</a>
               </div>
             </div>
 
             <div class="card" id="tratamiento-arrugas">
               <div class="card-image">
-                <img src="https://images.unsplash.com/photo-1629367448834-453716075da3?auto=format&fit=crop&q=80" alt="Toxina Botulínica">
+                <img src="./imagenes/WhatsApp Image 2026-07-25 at 21.05.51 (1).jpeg" alt="Toxina Botulínica">
               </div>
               <div class="card-content">
-                <h4>💉 Toxina botulínica</h4>
-                <p>Prevención y tratamiento de líneas de expresión conservando la naturalidad.</p>
+                <h4>Toxina Botulínica</h4>
+                <p>Prevención y tratamiento de líneas de expresión conservando la naturalidad de tu mirada y gestos.</p>
                 <ul class="treatment-details">
                   <li><strong>Duración:</strong> 4 a 6 meses</li>
                   <li><strong>Recuperación:</strong> Inmediata</li>
                 </ul>
-                <a href="#reserva" class="btn btn-outline full-width mt-2">Reservar</a>
+                <a href="#reserva" class="btn btn-outline full-width mt-2">Reservar evaluación</a>
               </div>
             </div>
 
@@ -211,16 +204,15 @@
       <section class="about-section" id="sobre-mi">
         <div class="container about-grid">
           <div class="about-image parallax-bg">
-             <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&q=80" alt="Dra. Alison Carú en Congreso">
+             <img src="./imagenes/WhatsApp Image 2026-07-25 at 21.05.50.jpeg" alt="Dra. Alison Carú">
           </div>
           <div class="about-content">
-            <h3 class="section-title">Hola. <br>Soy Alison Carú.</h3>
-            <p class="lead-text">Cirujana dentista con diplomado en armonización orofacial.</p>
-            <p>Mi objetivo es ayudarte a potenciar tu belleza de forma natural, respetando siempre las proporciones de tu rostro.</p>
+            <h3 class="section-title">Hola. <br>Soy Alison.</h3>
+            <p class="lead-text">Cirujana dentista & Especialista en Armonización Orofacial.</p>
+            <p>Mi objetivo es ayudarte a potenciar tu belleza de forma natural, respetando siempre las proporciones únicas de tu rostro.</p>
             <p><strong>No creo en transformar personas. Creo en resaltar aquello que ya las hace únicas.</strong></p>
             
             <div class="credentials mt-4">
-              <h5>Certificaciones y Marcas</h5>
               <div class="brands-list">
                 <span>Galderma</span>
                 <span>Restylane</span>
@@ -238,24 +230,24 @@
           <h3 class="section-title">La Experiencia</h3>
           <div class="steps-grid">
             <div class="step-item">
-              <div class="step-number">1</div>
+              <div class="step-number">01</div>
               <h4>Evaluación facial</h4>
-              <p>Análisis detallado de tu rostro.</p>
+              <p>Análisis detallado de tu rostro, piel y proporciones.</p>
             </div>
             <div class="step-item">
-              <div class="step-number">2</div>
+              <div class="step-number">02</div>
               <h4>Diseño personalizado</h4>
-              <p>Planificación de tu tratamiento.</p>
+              <p>Planificación de tu tratamiento a medida.</p>
             </div>
             <div class="step-item">
-              <div class="step-number">3</div>
-              <h4>Tratamiento</h4>
-              <p>Procedimiento seguro y confortable.</p>
+              <div class="step-number">03</div>
+              <h4>El Tratamiento</h4>
+              <p>Procedimiento médico seguro, confortable y sutil.</p>
             </div>
             <div class="step-item">
-              <div class="step-number">4</div>
+              <div class="step-number">04</div>
               <h4>Control posterior</h4>
-              <p>Seguimiento para asegurar resultados.</p>
+              <p>Seguimiento para asegurar resultados perfectos.</p>
             </div>
           </div>
         </div>
@@ -264,48 +256,39 @@
       <!-- Reviews Section -->
       <section class="reviews-section">
         <div class="container text-center">
-          <h3 class="section-title">Experiencias Reales</h3>
+          <h3 class="section-title">Amor de Pacientes</h3>
           <div class="reviews-slider">
             <div class="review-card">
-              <div class="stars">★★★★★</div>
-              <p>"Excelente atención. Me explicó todo. El resultado quedó súper natural."</p>
+              <div class="stars">✦✦✦✦✦</div>
+              <p>"Excelente atención. Me explicó todo. El resultado quedó súper natural, justo lo que buscaba."</p>
               <div class="reviewer">
-                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80" alt="Paciente">
+                <img src="./imagenes/WhatsApp Image 2026-07-25 at 21.05.53.jpeg" alt="Paciente Feliz">
                 <span>Camila G.</span>
               </div>
             </div>
-            <!-- More reviews could go here -->
           </div>
         </div>
       </section>
 
       <!-- FAQ Section -->
       <section class="faq-section container">
-        <h3 class="section-title text-center">Preguntas Frecuentes</h3>
+        <h3 class="section-title text-center">Dudas Frecuentes</h3>
         <div class="faq-accordion">
           <div class="faq-item">
             <button class="faq-question">¿Duele el procedimiento? <span class="icon">+</span></button>
-            <div class="faq-answer"><p>Utilizamos anestesia local de alta calidad para minimizar cualquier molestia. La mayoría de los pacientes lo describe como un procedimiento muy tolerable.</p></div>
+            <div class="faq-answer"><p>Utilizamos anestesia local de alta calidad para minimizar cualquier molestia. La mayoría de los pacientes lo describe como un procedimiento muy tolerable y casi indoloro.</p></div>
           </div>
           <div class="faq-item">
             <button class="faq-question">¿Cuánto duran los resultados? <span class="icon">+</span></button>
-            <div class="faq-answer"><p>Depende del tratamiento. El ácido hialurónico suele durar de 9 a 18 meses, mientras que la toxina botulínica entre 4 y 6 meses.</p></div>
+            <div class="faq-answer"><p>Depende del tratamiento. El ácido hialurónico suele durar de 9 a 18 meses, mientras que la toxina botulínica entre 4 y 6 meses, dependiendo del metabolismo de cada persona.</p></div>
           </div>
           <div class="faq-item">
-            <button class="faq-question">¿Se puede volver atrás? <span class="icon">+</span></button>
-            <div class="faq-answer"><p>Sí, en el caso del ácido hialurónico utilizamos una enzima llamada hialuronidasa que permite revertir el efecto si es necesario.</p></div>
+            <button class="faq-question">¿Se puede revertir? <span class="icon">+</span></button>
+            <div class="faq-answer"><p>Sí, en el caso del ácido hialurónico utilizamos una enzima llamada hialuronidasa que permite disolver el producto y revertir el efecto si es necesario.</p></div>
           </div>
           <div class="faq-item">
             <button class="faq-question">¿Qué marca utilizas? <span class="icon">+</span></button>
-            <div class="faq-answer"><p>Trabajamos exclusivamente con marcas premium reconocidas mundialmente como Galderma y Restylane.</p></div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-question">¿Cuánto tiempo demora? <span class="icon">+</span></button>
-            <div class="faq-answer"><p>La sesión suele durar entre 30 y 45 minutos, dependiendo del área a tratar.</p></div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-question">¿Cuándo veo resultados? <span class="icon">+</span></button>
-            <div class="faq-answer"><p>En la mayoría de los casos con ácido hialurónico, los resultados son inmediatos. Para la toxina botulínica, los resultados finales se aprecian a los 14 días.</p></div>
+            <div class="faq-answer"><p>Trabajamos exclusivamente con marcas premium reconocidas mundialmente como Galderma y Restylane, garantizando seguridad y durabilidad.</p></div>
           </div>
         </div>
       </section>
@@ -314,7 +297,7 @@
       <section class="cta-section text-center" id="reserva">
         <div class="container">
           <h2 class="section-title text-white">Agenda tu evaluación</h2>
-          <p class="text-white cta-subtitle">Da el primer paso hacia tu mejor versión.</p>
+          <p class="text-white cta-subtitle">Da el primer paso hacia tu mejor versión. Te espero en consulta.</p>
           <a href="https://wa.me/56900000000" target="_blank" class="btn btn-whatsapp">Agenda por WhatsApp</a>
         </div>
       </section>
@@ -326,20 +309,19 @@
       <div class="container footer-grid">
         <div class="footer-col">
           <h4>ALISON CARÚ</h4>
-          <p>Medicina estética facial premium con respaldo odontológico.</p>
+          <p>Medicina estética facial con un enfoque joven, natural y seguro.</p>
         </div>
         <div class="footer-col">
-          <h4>Ubicaciones</h4>
-          <p>Puente Alto (Edificio Cordillera)</p>
+          <h4>Consultas</h4>
+          <p>Edificio Cordillera, Puente Alto</p>
           <p>Providencia</p>
           <p>Chicureo</p>
         </div>
         <div class="footer-col">
-          <h4>Contacto</h4>
+          <h4>Conecta</h4>
           <div class="social-links">
-            <a href="#">Instagram</a>
-            <a href="#">WhatsApp</a>
-            <a href="#">LinkedIn</a>
+            <a href="https://www.instagram.com/dra.alisoncaru" target="_blank">Instagram</a>
+            <a href="https://wa.me/56900000000" target="_blank">WhatsApp</a>
           </div>
         </div>
       </div>
