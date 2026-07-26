@@ -4,16 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dra. Alison Carú | Estética Facial Premium</title>
-    <!-- Google Fonts: Playfair Display and Outfit -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <!-- Floating WhatsApp Button -->
+    <!-- Custom Cursor & Noise Texture -->
+    <div class="custom-cursor"></div>
+    <div class="noise-overlay"></div>
+
+    <!-- Floating WhatsApp Button (Fixed bug with inline sizes) -->
     <a href="https://wa.me/56900000000" target="_blank" class="floating-whatsapp" aria-label="Contactar por WhatsApp">
-      <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+      <svg width="35" height="35" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
         <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.888-.788-1.487-1.761-1.66-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/>
       </svg>
     </a>
@@ -25,277 +28,267 @@
           <img src="./imagenes/img2.jpg" alt="Logo Carú Dentista" class="nav-logo-img">
         </div>
         <nav class="nav-links">
-          <a href="#galeria">Trabajos</a>
-          <a href="#servicios">Servicios</a>
-          <a href="#proceso">Proceso</a>
-          <a href="#sobre-mi">Dra. Alison</a>
-          <a href="#testimonios">Pacientes</a>
+          <a href="#galeria" class="hover-glow">Trabajos</a>
+          <a href="#experiencia" class="hover-glow">Experiencia</a>
+          <a href="#inversion" class="hover-glow">Inversión</a>
+          <a href="#sobre-mi" class="hover-glow">Dra. Alison</a>
         </nav>
       </div>
     </header>
 
     <main>
-      <!-- 1. Hero Section -->
-      <section class="hero fade-in-up">
+      <!-- 1. Hero Cinemático -->
+      <section class="hero-cinematic">
+        <div class="hero-bg parallax" style="background-image: url('./imagenes/img11.jpg');"></div>
+        <div class="hero-overlay"></div>
         <div class="hero-content">
-          <h2 class="animate-fade-up">Armonización Facial para potenciar tu belleza natural.</h2>
-          <p class="hero-subtitle animate-fade-up delay-1">Tratamientos médicos seguros, rápidos y personalizados para rejuvenecer tu rostro y aumentar tu confianza sin perder tu esencia.</p>
+          <h1 class="animate-fade-up">Elegancia Natural.</h1>
+          <p class="hero-subtitle animate-fade-up delay-1">Medicina estética facial boutique orientada a resultados sutiles, armónicos y extraordinarios.</p>
           <div class="hero-actions animate-fade-up delay-2">
-            <a href="#reserva" class="btn btn-primary">Agendar evaluación</a>
-            <a href="#galeria" class="btn btn-secondary">Ver trabajos</a>
+            <a href="#inversion" class="btn btn-primary">Planificar Tratamiento</a>
+            <a href="#galeria" class="btn btn-secondary">Ver Casos Reales</a>
           </div>
         </div>
-        <div class="hero-image-wrapper">
-          <div class="hero-image">
-            <img src="./imagenes/img11.jpg" alt="Dra. Alison Carú Congreso" />
-            <!-- Video Placeholder Icon -->
-            <div class="video-placeholder" title="Reproducir Video">
-              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path d="M8 5v14l11-7z"/>
-              </svg>
-            </div>
+        <div class="scroll-indicator">
+          <span>Descubre la experiencia</span>
+          <div class="mouse">
+            <div class="wheel"></div>
           </div>
         </div>
       </section>
 
-      <!-- 2. Galería de Trabajos -->
-      <section class="results-section fade-in-up" id="galeria">
-        <div class="container">
-          <h3 class="section-title text-center">Nuestros Resultados</h3>
-          <p class="text-center section-subtitle">Resultados reales, sutiles y elegantes, respetando la anatomía única de tu rostro.</p>
-          <div class="pinterest-grid">
-            <div class="grid-item card-float">
-              <div class="ba-image">
-                <span class="ba-label">Antes & Después</span>
-                <img src="./imagenes/img10.jpg" alt="Labios Transformación">
-              </div>
-              <h4 class="text-center mt-2">Armonización de Labios</h4>
-            </div>
-            <div class="grid-item card-float delay-1">
-              <div class="ba-image">
-                <span class="ba-label">Antes & Después</span>
-                <img src="./imagenes/img6.jpg" alt="Perfil Masculino">
-              </div>
-              <h4 class="text-center mt-2">Contorno Mandibular Masculino</h4>
-            </div>
-            <div class="grid-item card-float delay-2">
-              <div class="ba-image">
-                <span class="ba-label">Antes & Después</span>
-                <img src="./imagenes/img9.jpg" alt="Rinomodelación">
-              </div>
-              <h4 class="text-center mt-2">Rinomodelación sin cirugía</h4>
-            </div>
+      <!-- 2. Estadísticas Premium -->
+      <section class="stats-section fade-in-up">
+        <div class="container stats-grid">
+          <div class="stat-item">
+            <h3 class="counter" data-target="1500">0</h3><span>+</span>
+            <p>Pacientes Felices</p>
+          </div>
+          <div class="stat-item">
+            <h3 class="counter" data-target="98">0</h3><span>%</span>
+            <p>Satisfacción</p>
+          </div>
+          <div class="stat-item">
+            <h3 class="counter" data-target="3">0</h3>
+            <p>Clínicas Aliadas</p>
+          </div>
+          <div class="stat-item">
+            <h3 class="counter" data-target="14">0</h3><span> Días</span>
+            <p>Seguimiento Médico</p>
           </div>
         </div>
       </section>
 
-      <!-- 3. CTA Intermedio -->
-      <section class="cta-mid-section fade-in-up">
+      <!-- 3. Slider Interactivo Antes / Después -->
+      <section class="slider-section fade-in-up">
         <div class="container text-center">
-          <h3 class="section-title">¿Te gustaría lograr resultados como estos?</h3>
-          <p class="cta-subtitle">Da el primer paso hacia tu mejor versión. Reserva una hora para que analicemos tu rostro.</p>
-          <a href="https://wa.me/56900000000" target="_blank" class="btn btn-primary">Agendar una reunión</a>
+          <h2 class="section-title">El poder de lo sutil</h2>
+          <p class="section-subtitle">Arrastra la barra para revelar el cambio.</p>
+          
+          <div class="ba-slider-container">
+            <div class="ba-slider">
+              <!-- Before Image (Base) -->
+              <img src="./imagenes/img10.jpg" alt="Antes" class="ba-image-before">
+              <!-- After Image (Overlay) -->
+              <div class="ba-overlay">
+                <img src="./imagenes/img9.jpg" alt="Después" class="ba-image-after">
+              </div>
+              <div class="ba-handle">
+                <div class="ba-handle-line"></div>
+                <div class="ba-handle-button">&lt;&gt;</div>
+              </div>
+            </div>
+            <p class="ba-caption">Ejemplo de Rinomodelación y Armonización. (Desliza para interactuar)</p>
+          </div>
         </div>
       </section>
 
-      <!-- 4. Servicios -->
-      <section class="treatments-section fade-in-up" id="servicios">
+      <!-- 4. Galería Masonry Filtrable -->
+      <section class="gallery-section fade-in-up" id="galeria">
         <div class="container">
-          <h3 class="section-title text-center">Servicios</h3>
-          <div class="treatment-cards">
+          <h2 class="section-title text-center">Portafolio Clínico</h2>
+          
+          <div class="gallery-filters text-center">
+            <button class="filter-btn active" data-filter="all">Todos</button>
+            <button class="filter-btn" data-filter="labios">Labios</button>
+            <button class="filter-btn" data-filter="nariz">Rinomodelación</button>
+            <button class="filter-btn" data-filter="contorno">Contorno Facial</button>
+          </div>
+
+          <div class="masonry-grid mt-4">
+            <!-- Labios -->
+            <div class="masonry-item labios">
+              <div class="image-wrapper hover-zoom">
+                <img src="./imagenes/img5.jpg" alt="Labios">
+                <div class="masonry-overlay"><h4>Diseño Labial</h4></div>
+              </div>
+            </div>
+            <div class="masonry-item labios">
+              <div class="image-wrapper hover-zoom">
+                <img src="./imagenes/img10.jpg" alt="Labios">
+                <div class="masonry-overlay"><h4>Hidratación y Volumen</h4></div>
+              </div>
+            </div>
+            <!-- Nariz -->
+            <div class="masonry-item nariz">
+              <div class="image-wrapper hover-zoom">
+                <img src="./imagenes/img1.jpg" alt="Nariz">
+                <div class="masonry-overlay"><h4>Rinomodelación</h4></div>
+              </div>
+            </div>
+            <div class="masonry-item nariz">
+              <div class="image-wrapper hover-zoom">
+                <img src="./imagenes/img9.jpg" alt="Nariz">
+                <div class="masonry-overlay"><h4>Perfilado Nasal</h4></div>
+              </div>
+            </div>
+            <!-- Contorno -->
+            <div class="masonry-item contorno">
+              <div class="image-wrapper hover-zoom">
+                <img src="./imagenes/img3.jpg" alt="Contorno">
+                <div class="masonry-overlay"><h4>Definición Mandibular</h4></div>
+              </div>
+            </div>
+            <div class="masonry-item contorno">
+              <div class="image-wrapper hover-zoom">
+                <img src="./imagenes/img6.jpg" alt="Contorno">
+                <div class="masonry-overlay"><h4>Masculinización</h4></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. Calculadora de Inversión -->
+      <section class="calculator-section fade-in-up" id="inversion">
+        <div class="container calculator-wrapper">
+          <div class="calc-content">
+            <h2 class="section-title">Calculadora de Inversión</h2>
+            <p class="section-subtitle">Estima el valor de tu tratamiento de manera transparente. (Precios referenciales).</p>
             
-            <div class="card">
-              <div class="card-image">
-                <img src="./imagenes/img5.jpg" alt="Ácido Hialurónico Labios">
+            <form id="calc-form">
+              <div class="form-group">
+                <label>Tratamiento Principal</label>
+                <select id="calc-treatment" class="calc-input">
+                  <option value="0">Selecciona un tratamiento...</option>
+                  <option value="200000">Rinomodelación Ácido Hialurónico</option>
+                  <option value="180000">Diseño y Volumen de Labios</option>
+                  <option value="150000">Toxina Botulínica (Botox - 1 Zona)</option>
+                  <option value="250000">Toxina Botulínica (Botox - Rostro Completo)</option>
+                  <option value="300000">Contorno Mandibular y Mentón</option>
+                </select>
               </div>
-              <div class="card-content">
-                <h4>Ácido Hialurónico</h4>
-                <p>Volumen sutil, hidratación y definición perfecta. Un acabado natural que realza tu sonrisa sin exagerar.</p>
+              <div class="form-group">
+                <label>Complementos Extras (Opcional)</label>
+                <div class="checkbox-group">
+                  <label><input type="checkbox" value="50000" class="calc-extra"> Hidratación profunda (Skinbooster)</label>
+                  <label><input type="checkbox" value="40000" class="calc-extra"> Perfilado extra (0.5ml Hialurónico)</label>
+                </div>
               </div>
+            </form>
+          </div>
+          <div class="calc-result">
+            <h4>Inversión Estimada</h4>
+            <div class="price-display">
+              <span class="currency">$</span>
+              <span id="calc-total">0</span>
             </div>
-
-            <div class="card">
-              <div class="card-image">
-                <img src="./imagenes/img1.jpg" alt="Rinomodelación">
-              </div>
-              <div class="card-content">
-                <h4>Rinomodelación</h4>
-                <p>Mejora el perfil nasal sin cirugía, de forma rápida, segura y con resultados estéticos inmediatos.</p>
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="card-image">
-                <img src="./imagenes/img3.jpg" alt="Contorno Mandibular">
-              </div>
-              <div class="card-content">
-                <h4>Contorno Mandibular</h4>
-                <p>Mayor definición y equilibrio facial para un rostro más estilizado y una línea de la mandíbula marcada.</p>
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="card-image">
-                <img src="./imagenes/img7.jpg" alt="Toxina Botulínica">
-              </div>
-              <div class="card-content">
-                <h4>Toxina Botulínica</h4>
-                <p>Prevención y tratamiento de líneas de expresión conservando la naturalidad de tu mirada y gestos.</p>
-              </div>
-            </div>
-
+            <p class="calc-note">Incluye evaluación, insumos premium (Galderma/Restylane) y control a los 14 días.</p>
+            <a href="https://wa.me/56900000000" target="_blank" class="btn btn-primary full-width hover-glow">Agendar con este presupuesto</a>
           </div>
         </div>
       </section>
 
-      <!-- 5. Proceso -->
-      <section class="experience-section text-center fade-in-up" id="proceso">
+      <!-- 6. Mapa Interactivo y Ubicaciones -->
+      <section class="map-section fade-in-up">
         <div class="container">
-          <h3 class="section-title">El Proceso</h3>
-          <p class="section-subtitle">Diseñado para tu tranquilidad, seguridad y satisfacción absoluta.</p>
-          <div class="steps-grid">
-            <div class="step-item">
-              <div class="step-number">01</div>
-              <h4>Agendamiento</h4>
-              <p>Eliges la hora que más te acomode directamente por WhatsApp.</p>
+          <h2 class="section-title text-center">Nuestras Ubicaciones</h2>
+          <div class="interactive-map">
+            <div class="map-bg"></div>
+            <!-- Pines de mapa -->
+            <div class="map-pin" style="top: 30%; left: 60%;">
+              <div class="pin-dot"></div>
+              <div class="pin-card">
+                <h4>Chicureo</h4>
+                <p>Clínica Avanzada, Colina</p>
+              </div>
             </div>
-            <div class="step-item">
-              <div class="step-number">02</div>
-              <h4>Evaluación y Diseño</h4>
-              <p>Analizamos tu rostro en profundidad y planificamos el tratamiento a tu medida.</p>
+            <div class="map-pin" style="top: 50%; left: 45%;">
+              <div class="pin-dot"></div>
+              <div class="pin-card">
+                <h4>Providencia</h4>
+                <p>Centro Estético, Santiago</p>
+              </div>
             </div>
-            <div class="step-item">
-              <div class="step-number">03</div>
-              <h4>El Tratamiento</h4>
-              <p>Procedimiento médico seguro, confortable y sutil utilizando insumos de máxima calidad.</p>
-            </div>
-            <div class="step-item">
-              <div class="step-number">04</div>
-              <h4>Control y Alta</h4>
-              <p>Hacemos seguimiento clínico presencial para asegurar resultados perfectos a largo plazo.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- 6. Caso de Éxito -->
-      <section class="success-case-section fade-in-up">
-        <div class="container success-grid">
-          <div class="success-content">
-            <h3 class="section-title">Caso de Éxito: Camila</h3>
-            <p class="lead-text">"Buscaba un cambio sutil que me devolviera la confianza al sonreír."</p>
-            <p><strong>El Desafío:</strong> Camila quería hidratar sus labios y mejorar su perfil, pero tenía muchísimo miedo de quedar con un resultado exagerado y perder sus rasgos naturales.</p>
-            <p><strong>El Resultado:</strong> Mediante un diseño labial personalizado con ácido hialurónico premium (Restylane) y una rinomodelación muy conservadora, logramos un equilibrio facial perfecto.</p>
-            <blockquote class="success-quote">
-              "Superó completamente mis expectativas. Nadie nota qué me hice exactamente, pero todos me dicen que me veo más descansada y linda."
-            </blockquote>
-          </div>
-          <div class="success-images">
-             <img src="./imagenes/img10.jpg" alt="Transformación Labios Camila">
-          </div>
-        </div>
-      </section>
-
-      <!-- 7. Sobre Mí -->
-      <section class="about-section fade-in-up" id="sobre-mi">
-        <div class="container about-grid">
-          <div class="about-image parallax-bg">
-             <img src="./imagenes/img4.jpg" alt="Dra. Alison Carú en clínica">
-          </div>
-          <div class="about-content">
-            <h3 class="section-title">Hola. Soy Alison.</h3>
-            <p class="lead-text">Cirujana Dentista & Especialista en Armonización Orofacial. 27 años.</p>
-            <p>Empática, sensible y enfocada en resaltar la belleza natural. Mi objetivo es ayudarte a potenciar lo que te hace única, respetando siempre las proporciones de tu rostro.</p>
-            <p><strong>No creo en transformar personas. Creo en la medicina estética como una herramienta para tu confianza.</strong></p>
-            <div class="credentials mt-4">
-              <div class="brands-list">
-                <span>Galderma</span>
-                <span>Restylane</span>
-                <span>Vegana</span>
-                <span>Amante del Trekking</span>
+            <div class="map-pin" style="top: 70%; left: 55%;">
+              <div class="pin-dot"></div>
+              <div class="pin-card">
+                <h4>Puente Alto</h4>
+                <p>Edificio Cordillera</p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- 8. Testimonios -->
-      <section class="testimonials-section text-center fade-in-up" id="testimonios">
-        <div class="container">
-          <h3 class="section-title">Experiencias Reales</h3>
-          <div class="testimonials-grid">
-            <div class="testimonial-card">
-              <div class="stars">⭐⭐⭐⭐⭐</div>
-              <p>"Superó completamente mis expectativas. Me explicó todo el proceso con mucha paciencia y los resultados fueron inmediatos y muy sutiles."</p>
-              <span class="testimonial-author">— Fernanda M.</span>
+      <!-- 7. Disponibilidad y Redes Sociales -->
+      <section class="social-booking-section fade-in-up">
+        <div class="container grid-2">
+          
+          <!-- Calendario Simulado -->
+          <div class="calendar-widget">
+            <h3>Disponibilidad Actual</h3>
+            <div class="calendar-grid mt-2">
+              <div class="cal-day full"><span>15</span><small>Lleno</small></div>
+              <div class="cal-day full"><span>16</span><small>Lleno</small></div>
+              <div class="cal-day open"><span>17</span><small>2 cupos</small></div>
+              <div class="cal-day open"><span>18</span><small>1 cupo</small></div>
+              <div class="cal-day full"><span>19</span><small>Lleno</small></div>
             </div>
-            <div class="testimonial-card">
-              <div class="stars">⭐⭐⭐⭐⭐</div>
-              <p>"La mejor experiencia. Tenía miedo a que me doliera o quedara exagerado, pero la doctora tiene unas manos de ángel. 100% recomendada."</p>
-              <span class="testimonial-author">— Valeria S.</span>
-            </div>
-            <div class="testimonial-card">
-              <div class="stars">⭐⭐⭐⭐⭐</div>
-              <p>"Me hice el perfilado mandibular y me cambió el rostro por completo, pero nadie nota que es ácido hialurónico. Justo lo que quería."</p>
-              <span class="testimonial-author">— Diego A.</span>
-            </div>
+            <p class="mt-2 text-muted">Las horas se agotan rápido. Asegura tu evaluación con anticipación.</p>
           </div>
-        </div>
-      </section>
 
-      <!-- 9. FAQ Section -->
-      <section class="faq-section container fade-in-up" id="faq">
-        <h3 class="section-title text-center">Dudas Frecuentes</h3>
-        <div class="faq-accordion">
-          <div class="faq-item">
-            <button class="faq-question">¿Dónde realizas las sesiones? <span class="icon">+</span></button>
-            <div class="faq-answer"><p>Atiendo en clínicas ubicadas estratégicamente en Puente Alto (Edificio Cordillera), Providencia y Chicureo, siempre en entornos clínicos seguros.</p></div>
+          <!-- Grilla Instagram -->
+          <div class="instagram-widget">
+            <h3>Últimos Casos Clínicos</h3>
+            <div class="ig-grid mt-2">
+              <div class="ig-item"><img src="./imagenes/img1.jpg" alt="IG 1"></div>
+              <div class="ig-item"><img src="./imagenes/img5.jpg" alt="IG 2"></div>
+              <div class="ig-item"><img src="./imagenes/img10.jpg" alt="IG 3"></div>
+              <div class="ig-item"><img src="./imagenes/img6.jpg" alt="IG 4"></div>
+            </div>
+            <a href="https://www.instagram.com/dra.alisoncaru" target="_blank" class="btn btn-outline mt-2 full-width">Seguir en Instagram</a>
           </div>
-          <div class="faq-item">
-            <button class="faq-question">¿Cuánto demoran los resultados? <span class="icon">+</span></button>
-            <div class="faq-answer"><p>En el caso del ácido hialurónico (labios, rinomodelación, contorno), el resultado es inmediato. Para la toxina botulínica, el efecto máximo se observa a los 14 días.</p></div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-question">¿Qué pasa si no me gusta el resultado? <span class="icon">+</span></button>
-            <div class="faq-answer"><p>Si usamos ácido hialurónico, el procedimiento es 100% reversible. Podemos aplicar una enzima llamada hialuronidasa que disuelve el producto de forma segura.</p></div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-question">¿Cómo reservo? <span class="icon">+</span></button>
-            <div class="faq-answer"><p>Las reservas se realizan a través de WhatsApp. Solicitaremos unos datos básicos y agendaremos el horario que mejor se adapte a ti.</p></div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-question">¿Debo pagar un anticipo? <span class="icon">+</span></button>
-            <div class="faq-answer"><p>Sí, solicitamos el pago de la consulta de evaluación ($25.000) de manera anticipada para reservar y asegurar tu bloque de hora en la clínica. Si te realizas el tratamiento el mismo día, ese monto se descuenta del total.</p></div>
-          </div>
+
         </div>
       </section>
 
     </main>
 
-    <!-- 10. Footer Profesional -->
-    <footer class="footer fade-in-up" id="contacto">
-      <div class="container footer-grid">
-        <div class="footer-col">
-          <img src="./imagenes/img2.jpg" alt="Logo Carú Dentista" class="footer-logo">
-          <p class="mt-2">Medicina estética facial con un enfoque joven, natural y altamente seguro.</p>
-        </div>
-        <div class="footer-col">
-          <h4>Contacto</h4>
-          <div class="social-links">
-            <a href="https://wa.me/56900000000" target="_blank">WhatsApp: +56 9 0000 0000</a>
-            <a href="mailto:contacto@alisoncaru.cl">contacto@alisoncaru.cl</a>
-            <a href="https://www.instagram.com/dra.alisoncaru" target="_blank">Instagram: @dra.alisoncaru</a>
+    <!-- 10. Footer Premium -->
+    <footer class="footer-premium fade-in-up" id="contacto">
+      <div class="container text-center">
+        <h2 class="footer-cta-title">¿Lista para potenciar tu seguridad?</h2>
+        <a href="https://wa.me/56900000000" class="btn btn-primary mt-2">Reservar mi evaluación</a>
+        
+        <div class="footer-divider"></div>
+
+        <div class="footer-links-grid">
+          <div class="footer-brand">
+            <img src="./imagenes/img2.jpg" alt="Carú" class="footer-logo">
+          </div>
+          <div class="footer-social">
+            <a href="#">Instagram</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">WhatsApp</a>
+            <a href="mailto:contacto@alisoncaru.cl">Correo</a>
+          </div>
+          <div class="footer-legal">
+            <a href="#">Ubicación</a>
+            <a href="#">Políticas de Privacidad</a>
+            <a href="#">Copyright © 2026 Dra. Alison Carú</a>
           </div>
         </div>
-        <div class="footer-col">
-          <h4>Ubicaciones</h4>
-          <p>Edificio Cordillera, Puente Alto</p>
-          <p>Providencia, Santiago</p>
-          <p>Chicureo, Colina</p>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2026 Dra. Alison Carú. Todos los derechos reservados. <span style="margin: 0 10px;">|</span> <a href="#">Política de Privacidad</a> <span style="margin: 0 10px;">|</span> <a href="#">Términos y Condiciones</a></p>
       </div>
     </footer>
 
