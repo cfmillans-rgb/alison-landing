@@ -1,11 +1,11 @@
-/* CSS Variables - Design System (Sleek Dark Mode / Minimalist Premium) */
+/* CSS Variables - Design System (Burgundy Premium) */
 :root {
-  --color-bg: #09090b; /* Deep off-black */
-  --color-surface: #18181b; /* Card background */
-  --color-text: #fafafa;
-  --color-text-muted: #a1a1aa;
-  --color-sand: #3f3f46;
-  --color-details: #facc15; /* Subtle gold/champagne accent */
+  --color-bg: #290812; /* Deep burgundy from logo */
+  --color-surface: #3c121e; /* Slightly lighter burgundy for cards */
+  --color-text: #F0E6D8; /* Cream color from logo text */
+  --color-text-muted: #d9c7b8;
+  --color-sand: #6a1a2b;
+  --color-details: #F0E6D8; /* Using cream for accents */
   --color-white: #ffffff;
   --color-whatsapp: #25D366;
   --color-whatsapp-dark: #128C7E;
@@ -105,10 +105,10 @@ a {
   color: var(--color-bg);
 }
 .btn-primary:hover {
-  background-color: var(--color-details);
+  background-color: #d9c7b8;
   color: var(--color-bg);
   transform: translateY(-2px);
-  box-shadow: 0 10px 20px rgba(250, 204, 21, 0.15);
+  box-shadow: 0 10px 20px rgba(240, 230, 216, 0.15);
 }
 
 .btn-secondary {
@@ -150,15 +150,15 @@ a {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: rgba(9, 9, 11, 0.85);
+  background-color: rgba(41, 8, 18, 0.85); /* Burgundy transparent */
   backdrop-filter: blur(15px);
   z-index: 100;
-  border-bottom: 1px solid rgba(255,255,255,0.05);
+  border-bottom: 1px solid rgba(240, 230, 216, 0.1);
   transition: var(--transition);
 }
 .navbar.scrolled {
   box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-  background-color: rgba(9, 9, 11, 0.98);
+  background-color: rgba(41, 8, 18, 0.98);
 }
 .nav-container {
   display: flex;
@@ -247,7 +247,7 @@ a {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0.8; /* Slightly darken the image for the dark theme */
+  opacity: 0.9;
 }
 
 /* Video Placeholder Style */
@@ -258,9 +258,9 @@ a {
   transform: translate(-50%, -50%);
   width: 90px;
   height: 90px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(41, 8, 18, 0.6);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(255,255,255,0.2);
+  border: 1px solid rgba(240, 230, 216, 0.3);
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -272,14 +272,15 @@ a {
 }
 .video-placeholder:hover {
   transform: translate(-50%, -50%) scale(1.1);
-  background-color: var(--color-details);
-  border-color: var(--color-details);
+  background-color: var(--color-text);
+  border-color: var(--color-text);
 }
 .video-placeholder svg {
   width: 35px;
   height: 35px;
-  fill: var(--color-white);
+  fill: var(--color-text);
   margin-left: 6px;
+  transition: fill 0.3s;
 }
 .video-placeholder:hover svg {
   fill: var(--color-bg);
@@ -290,12 +291,12 @@ a {
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: rgba(9, 9, 11, 0.95);
+  background-color: rgba(41, 8, 18, 0.95);
   backdrop-filter: blur(10px);
   padding: 1.5rem var(--space-xl);
   display: flex;
   justify-content: space-between;
-  border-top: 1px solid rgba(255,255,255,0.05);
+  border-top: 1px solid rgba(240, 230, 216, 0.1);
   font-size: 0.85rem;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -325,7 +326,7 @@ a {
   width: 100%;
   padding: 1.5rem;
   background-color: transparent;
-  border: 1px solid var(--color-sand);
+  border: 1px solid rgba(240, 230, 216, 0.3);
   border-radius: var(--border-radius);
   font-family: var(--font-body);
   font-size: 1.1rem;
@@ -337,7 +338,7 @@ a {
 }
 .quiz-btn:hover {
   border-color: var(--color-details);
-  background-color: rgba(250, 204, 21, 0.05);
+  background-color: rgba(240, 230, 216, 0.1);
   color: var(--color-details);
   transform: translateY(-3px);
 }
@@ -373,7 +374,7 @@ a {
   position: absolute;
   top: 1.5rem;
   left: 1.5rem;
-  background: rgba(9, 9, 11, 0.8);
+  background: rgba(41, 8, 18, 0.8);
   backdrop-filter: blur(5px);
   color: var(--color-text);
   padding: 0.8rem 1.5rem;
@@ -383,7 +384,7 @@ a {
   z-index: 2;
   text-transform: uppercase;
   font-weight: 500;
-  border: 1px solid rgba(255,255,255,0.1);
+  border: 1px solid rgba(240, 230, 216, 0.2);
 }
 
 /* Treatments Section */
@@ -402,18 +403,18 @@ a {
   overflow: hidden;
   box-shadow: 0 10px 40px rgba(0,0,0,0.2);
   transition: var(--transition);
-  border: 1px solid rgba(255,255,255,0.05);
+  border: 1px solid rgba(240, 230, 216, 0.1);
 }
 .card:hover {
   transform: translateY(-10px);
   box-shadow: 0 25px 50px rgba(0,0,0,0.4);
-  border-color: rgba(255,255,255,0.15);
+  border-color: rgba(240, 230, 216, 0.3);
 }
 .card-image img {
   height: 300px;
   width: 100%;
   object-fit: cover;
-  opacity: 0.9;
+  opacity: 0.95;
 }
 .card-content {
   padding: 2.5rem;
@@ -432,7 +433,7 @@ a {
   list-style: none;
   margin-bottom: 2rem;
   font-size: 0.9rem;
-  border-top: 1px solid rgba(255,255,255,0.05);
+  border-top: 1px solid rgba(240, 230, 216, 0.1);
   padding-top: 1.5rem;
   font-weight: 300;
   color: var(--color-text-muted);
@@ -491,7 +492,7 @@ a {
   background-color: var(--color-bg);
   border-radius: 50px;
   font-size: 0.8rem;
-  border: 1px solid rgba(255,255,255,0.05);
+  border: 1px solid rgba(240, 230, 216, 0.1);
   letter-spacing: 1px;
   text-transform: uppercase;
 }
@@ -512,21 +513,21 @@ a {
   background: var(--color-surface);
   padding: 3rem 2rem;
   border-radius: var(--border-radius-lg);
-  border: 1px solid rgba(255,255,255,0.05);
+  border: 1px solid rgba(240, 230, 216, 0.1);
   transition: var(--transition);
 }
 .step-item:hover {
   transform: translateY(-5px);
-  border-color: rgba(255,255,255,0.15);
+  border-color: rgba(240, 230, 216, 0.3);
 }
 .step-number {
   font-family: var(--font-heading);
   font-size: 4rem;
-  color: var(--color-sand);
+  color: var(--color-text);
   margin-bottom: 1rem;
   line-height: 1;
   font-style: italic;
-  opacity: 0.3;
+  opacity: 0.15;
 }
 .step-item h4 {
   font-size: 1.3rem;
@@ -547,7 +548,7 @@ a {
   margin: 0 auto;
 }
 .faq-item {
-  border-bottom: 1px solid rgba(255,255,255,0.05);
+  border-bottom: 1px solid rgba(240, 230, 216, 0.1);
 }
 .faq-question {
   width: 100%;
@@ -591,7 +592,7 @@ a {
 .cta-section {
   padding: var(--space-xl) 0;
   background-color: var(--color-surface);
-  border-top: 1px solid rgba(255,255,255,0.05);
+  border-top: 1px solid rgba(240, 230, 216, 0.1);
 }
 .cta-subtitle {
   margin-bottom: 3.5rem;
@@ -604,7 +605,7 @@ a {
 .footer {
   background-color: var(--color-bg);
   padding: var(--space-xl) 0 2rem;
-  border-top: 1px solid rgba(255,255,255,0.05);
+  border-top: 1px solid rgba(240, 230, 216, 0.1);
 }
 .footer-logo {
   height: 60px;
@@ -644,10 +645,11 @@ a {
 .footer-bottom {
   text-align: center;
   padding-top: 3rem;
-  border-top: 1px solid rgba(255,255,255,0.05);
-  color: #666;
+  border-top: 1px solid rgba(240, 230, 216, 0.1);
+  color: var(--color-text-muted);
   font-size: 0.85rem;
   font-weight: 300;
+  opacity: 0.7;
 }
 
 /* Animations & Utilities */
