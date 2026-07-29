@@ -4,6 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dra. Alison Carú | Estética Facial Premium</title>
+    <meta name="description" content="Dra. Alison Carú. Medicina estética facial boutique orientada a resultados sutiles, armónicos y extraordinarios. Rinomodelación, diseño labial y armonización orofacial.">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://alisoncaru.cl/">
+    <meta property="og:title" content="Dra. Alison Carú | Estética Facial Premium">
+    <meta property="og:description" content="Medicina estética facial boutique orientada a resultados sutiles, armónicos y extraordinarios.">
+    <meta property="og:image" content="./imagenes/img11.jpg">
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Physician",
+      "name": "Dra. Alison Carú",
+      "image": "https://alisoncaru.cl/imagenes/img4.jpg",
+      "url": "https://alisoncaru.cl/",
+      "telephone": "+56900000000",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Santiago",
+        "addressCountry": "CL"
+      },
+      "medicalSpecialty": "Estética Facial"
+    }
+    </script>
+    
     <!-- Google Fonts: Cormorant Garamond & DM Sans -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -125,7 +152,7 @@
               <div class="ba-overlay">
                 <img src="./imagenes/img9.jpg" alt="Después" class="ba-image-after">
               </div>
-              <div class="ba-handle">
+              <div class="ba-handle" tabindex="0" aria-label="Deslizador para comparar antes y después" role="slider" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
                 <div class="ba-handle-line-gold"></div>
                 <!-- Diamond handle icon -->
                 <div class="ba-handle-diamond">
@@ -145,11 +172,11 @@
         <div class="container">
           <h2 class="section-title text-center italic-serif">Portafolio Clínico</h2>
           
-          <div class="gallery-filters text-center">
-            <button class="filter-btn active" data-filter="all">Todos</button>
-            <button class="filter-btn" data-filter="labios">Labios</button>
-            <button class="filter-btn" data-filter="nariz">Rinomodelación</button>
-            <button class="filter-btn" data-filter="contorno">Contorno Facial</button>
+          <div class="gallery-filters text-center" role="tablist">
+            <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true" tabindex="0">Todos</button>
+            <button class="filter-btn" data-filter="labios" role="tab" aria-selected="false" tabindex="0">Labios</button>
+            <button class="filter-btn" data-filter="nariz" role="tab" aria-selected="false" tabindex="0">Rinomodelación</button>
+            <button class="filter-btn" data-filter="contorno" role="tab" aria-selected="false" tabindex="0">Contorno Facial</button>
           </div>
 
           <div class="masonry-grid mt-4">
